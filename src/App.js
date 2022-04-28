@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
 import Banner from "./components/Banner";
@@ -13,7 +13,7 @@ import NotFoundPage from "./pages/NotFoundPage.js";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
       <Banner>
         <Routes>
@@ -27,7 +27,7 @@ function App() {
         </Routes>
       </Banner>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

@@ -1,10 +1,12 @@
 import React from "react";
+import TopSales from "../components/TopSales.js";
+import Catalog from "../components/Catalog.js";
 
 export default function HomePage() {
-
   return (
-    <div className="app">
-        HomePage
-    </div>
+    <React.Fragment>
+      <TopSales />
+      <Catalog />
+    </React.Fragment>
   );
 }

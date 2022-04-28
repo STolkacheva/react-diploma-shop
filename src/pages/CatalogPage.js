@@ -1,10 +1,6 @@
 import React from "react";
+import Catalog from "../components/Catalog.js";
 
 export default function CatalogPage() {
-
-  return (
-    <div className="app">
-        CatalogPage
-    </div>
-  );
+  return <Catalog withSearch />;
 }
